@@ -4,7 +4,7 @@ export const shapeService = {
   generateNewShape,
 }
 
-function generateNewShape({ shape, x, y, strokeColor, fillColor }) {
+function generateNewShape({ shape, x, y, strokeColor, fillColor, strokeWidth }) {
   return {
     _id: utilService.makeId(),
     type: shape,
@@ -15,5 +15,6 @@ function generateNewShape({ shape, x, y, strokeColor, fillColor }) {
     angle: 0,
     strokeColor,
     fillColor,
+    strokeWidth,
   }
 }
